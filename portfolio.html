@@ -18,8 +18,8 @@
     />
   </head>
   <body>
-    <header class="header-background container">
-      <div class="header-content">
+    <header class="header-background">
+      <div class="header-content container">
         <a href="./index.html" class="logo-link">
           <span class="logo-part">Web</span><span class="logo">Studio</span>
         </a>
@@ -32,17 +32,28 @@
         </nav>
         <ul class="contacts-nav">
           <li class="links">
-            <a href="mailto:info@devstudio.com" class="link-contacts">info@devstudio.com</a>
+            <a href="mailto:info@devstudio.com" class="link-contacts">
+              <svg class="mail-icon" width="16px" height="12px">
+                <use href="/images/symbol-defs.svg#icon-mail"></use>
+              </svg>
+              info@devstudio.com
+            </a>
           </li>
           <li class="links">
-            <a href="tel:+380961111111" class="link-contacts">+38 096 111 11 11</a>
+            <a href="tel:+380961111111" class="link-contacts"
+              ><svg class="phone-icon" width="10px" height="16px">
+                <use href="/images/symbol-defs.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
           </li>
         </ul>
       </div>
     </header>
     <main>
-      <section class="main container">
-        <ul class="portfolio-buttons container">
+      <section class="main">
+        <div class="container">
+        <ul class="portfolio-buttons">
           <li class="buttons"><button type="button" class="button-portfolio cursor">Все</button></li>
           <li class="buttons"><button type="button" class="button-portfolio cursor">Веб-сайты</button></li>
           <li class="buttons"><button type="button" class="button-portfolio cursor">Приложения</button></li>
@@ -52,14 +63,15 @@
         <ul class="portfolio-projects">
           <li class="portfolio-list">
             <a href="">
-              <img width="370" src="./images/Portfolio.jpg" alt="изображение вебсайта" class="project-pic"/></a>
+              <img width="370" src="./images/Portfolio.jpg" alt="изображение вебсайта" class="project-pic"/>
               <div class="card-content"><h2 class="project-name">Технокряр</h2>
               <p class="projects-description">Веб-сайт</p></div>
+              </a>
           </li>
           <li class="portfolio-list">
             <a href=""><img width="370" src="./images/Portfolio1.jpg" alt="постер" class="project-pic"/>
-              </a><div class="card-content"><h2 class="project-name">Постер New Orlean vs Golden Star</h2>
-              <p class="projects-description">Дизайн</p></div>
+              <div class="card-content"><h2 class="project-name">Постер New Orlean vs Golden Star</h2>
+              <p class="projects-description">Дизайн</p></div></a>
           </li>
           <li class="portfolio-list">
             <a href=""
@@ -111,6 +123,7 @@
             >
           </li>
         </ul>
+        </div>
       </section>
     </main>
     <footer class="footer">
